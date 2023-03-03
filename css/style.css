@@ -1,0 +1,394 @@
+/* &display=swap&subset=cyrillic-ext (вставить в плагин) для удаленного подключения*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext);
+
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('../fonts/SFUIText-Regular.woff2') format('woff2'),
+		url('../fonts/SFUIText-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('../fonts/SFUIText-Bold.woff2') format('woff2'),
+		url('../fonts/SFUIText-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+	/* по умолчанию */
+}
+
+body {
+	font-family: "Roboto";
+	line-height: 1;
+	background-color: rgb(177, 174, 174);
+
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* --------------- */
+.our {
+	padding: 45px;
+}
+
+.our_content {
+	max-width: 1034px;
+	margin: auto;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 200%;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	padding-left: 36px;
+	display: inline-block;
+	margin-bottom: 33px;
+
+}
+
+.suka {
+	max-width: 215px;
+}
+
+.title::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../img/Overlineromb.png') 0 0 no-repeat;
+	margin: 0px 16px -2px -42px;
+
+
+}
+
+.title:hover {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.h1 {
+	font-weight: 900;
+	display: inline-block;
+	font-size: 36px;
+	line-height: 117%;
+	color: #000000;
+	margin-bottom: 68px;
+	max-width: 540px;
+}
+
+.hidden {
+	display: inline-block;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 117%;
+	color: #000000;
+	color: blue;
+	margin: 0px 0px 0px -550px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.suka2:hover .h1 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.suka2:hover .hidden {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.our_minicontent {}
+
+.block1,
+.block2,
+.block3 {
+	max-width: 324px;
+	padding-left: 86px;
+	margin-right: 24px;
+	display: inline-block;
+
+}
+
+.block1::before {
+	content: '';
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url('../img/dog_love.png') 0 0 no-repeat;
+	margin: 0px 23px -65px -86px;
+}
+
+.block2::before {
+	content: '';
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url('../img/dog_vet2.png') 0 0 no-repeat;
+	margin: 0px 23px -65px -86px;
+}
+
+.block3::before {
+	content: '';
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url('../img/dog3.png') 0 0 no-repeat;
+	margin: 0px 23px -65px -86px;
+}
+
+.block1_title,
+.block2_title,
+.block3_title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 137%;
+	color: #F2726F;
+	margin-bottom: 20px;
+}
+
+.block1_text,
+.block2_text,
+.block3_text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+
+.block1:hover {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.block2:hover {
+	border: 20px dotted green;
+	border-radius: 45%;
+	background-color: blue;
+}
+
+.block2_title:hover,
+.block2_text:hover {
+	color: yellow;
+}
+
+.block2:hover::before {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.block3:hover::before {
+	content: '';
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url('../img/донателло.jpg') center / cover no-repeat;
+	margin: 0px 23px -65px -86px;
+}
+
+
+
+.block3 {
+	margin-right: 0px;
+}
+
+
+
+.choose {
+	padding: 45px;
+}
+
+.choosebox {
+	max-width: 1034px;
+	margin: auto;
+}
+
+.choosecontent {
+	max-width: 255px;
+	padding: 24px 24px 60px 24px;
+	background: #252525;
+	border-radius: 6px;
+	box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+.choosetitle {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.18;
+	letter-spacing: -0.275px;
+	text-transform: capitalize;
+	color: #FFF;
+	margin-bottom: 24px;
+}
+
+.choosetext {
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.38;
+	letter-spacing: -0.1625px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.choosetitle::after {
+	content: '';
+	display: block;
+	max-width: 56px;
+	height: 2px;
+	margin-top: 10px;
+	background-color: #34C759;
+}
+
+.choosecontent:hover {
+	background: url('../img/мики.jpg') center / cover no-repeat;
+
+}
+
+.choosecontent:hover .choosetitle,
+.choosecontent:hover .choosetext {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.homework {
+	padding: 50px;
+}
+
+.hwbox {
+	max-width: 1034px;
+	margin: auto;
+}
+
+.hwul li {
+	display: inline-block;
+	color: red;
+	font-size: 25px;
+	padding-left: 25px;
+}
+
+.hwul li:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.hwul li::before {
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: yellow;
+	border-radius: 50px;
+	vertical-align: top;
+	margin-right: 20px;
+	box-shadow: 0px 5px 50px red;
+}
+
+.hwul li:hover {
+	color: blue;
+	border: 5px dotted green;
+	display: inline-block;
+}
+
+.hwul li:hover::before {
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	border: 4px dashed blue;
+	border-radius: 0px;
+	box-shadow: 5px 15px 30px green;
+	margin-right: 5px;
+}
+
+.hwul li:nth-child(4):hover {
+	color: green;
+}
+
+.hwul li:hover::after {
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	border: 4px dashed blue;
+	border-radius: 0px;
+	box-shadow: 5px 15px 30px green;
+	margin-left: 10px;
+	vertical-align: bottom;
+}
